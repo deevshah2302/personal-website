@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battery Pack Design | Deev Shah</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- ✅ Correct Vanta background (TOPOLOGY, same as Projects) -->
+    <!-- VANTA.js Background (same as Projects page) -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.topology.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
         html, body {
@@ -17,10 +19,11 @@
             width: 100%;
             overflow-x: hidden;
             font-family: 'Inter', sans-serif;
-            background: #0a192f; /* fallback */
+            background: #0d1117; /* fallback */
             color: #111;
         }
 
+        /* Fullscreen animated background */
         #vanta-bg {
             position: fixed;
             top: 0;
@@ -30,6 +33,7 @@
             z-index: -1;
         }
 
+        /* Floating back button */
         .floating-btn {
             position: fixed;
             top: 20px;
@@ -42,7 +46,7 @@
             border-radius: 50px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
             transition: 0.25s ease;
-            z-index: 5;
+            z-index: 10;
         }
 
             .floating-btn:hover {
@@ -50,6 +54,7 @@
                 box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
             }
 
+        /* Main card layout */
         .project-container {
             display: flex;
             justify-content: center;
@@ -64,7 +69,7 @@
             padding: 2.5rem;
             line-height: 1.7;
             position: relative;
-            z-index: 2;
+            z-index: 5;
         }
 
             .project-card img {
@@ -87,13 +92,13 @@
 </head>
 
 <body>
-    <!-- ✅ Vanta background -->
+    <!-- Animated background -->
     <div id="vanta-bg"></div>
 
-    <!-- ✅ Floating back button -->
+    <!-- Floating Back Button -->
     <a href="projects.html" class="floating-btn">← Back</a>
 
-    <!-- ✅ Project content -->
+    <!-- Project Content -->
     <main class="project-container">
         <div class="project-card">
             <img src="battery-pack.jpg" alt="Battery Pack Design">
@@ -120,30 +125,27 @@
         </div>
     </main>
 
-    <!-- ✅ Vanta initialization -->
+    <!-- Vanta Background Script (exact same settings as projects.html) -->
     <script>
-        window.addEventListener("load", function () {
-            if (window.VANTA) {
-                VANTA.TOPOLOGY({
-                    el: "#vanta-bg",
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 200.00,
-                    minWidth: 200.00,
-                    scale: 1.00,
-                    scaleMobile: 1.00,
-                    color: 0x4361ee,
-                    backgroundColor: 0x0a192f,
-                    points: 10.00,
-                    maxDistance: 25.00,
-                    spacing: 20.00
-                });
-            }
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x30475e,
+            backgroundColor: 0x0d1117,
+            shininess: 35,
+            waveHeight: 20,
+            waveSpeed: 0.5,
+            zoom: 0.85
         });
     </script>
 </body>
 </html>
+
 
 
 
