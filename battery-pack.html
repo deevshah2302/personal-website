@@ -11,43 +11,34 @@
     <div id="vanta-bg" style="position: fixed; inset: 0; z-index: -1;"></div>
 
     <!-- Back Button -->
-    <a href="projects.html" class="back-btn">← Back to Projects</a>
+    <a href="projects.html" class="floating-btn">← Back to Projects</a>
 
-    <!-- Project Detail -->
-    <section class="project-detail">
-        <div class="project-card-container">
-            <img src="battery-pack.jpg" alt="Battery Pack" class="project-hero">
+    <!-- Main Project Card -->
+    <section class="intro">
+        <div class="card project-card">
+            <img src="battery-pack.jpg" alt="Battery Pack" class="project-image">
+            <h1>Battery Pack Design for Solar EV</h1>
+            <h3>UBC Solar — Jan 2025 to Mar 2025</h3>
+            <p>
+                Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle,
+                delivering <strong>5.25 kWh at 120 V</strong>. The design emphasized cooling efficiency, safety,
+                and modularity, validated through <strong>CFD-based thermal modeling</strong>.
+            </p>
 
-            <div class="project-info">
-                <h1>Battery Pack Design for Solar EV</h1>
-                <p class="subtitle">UBC Solar — January 2025 – March 2025</p>
+            <h2>Key Highlights</h2>
+            <ul>
+                <li>Achieved <strong>7–8 mΩ</strong> contact resistance using a non-welded configuration.</li>
+                <li>Refined CAD layout to fit within a <strong>25 × 20 × 8 inch</strong> enclosure.</li>
+                <li>Validated cooling airflow via <strong>Ansys & Altair CFD</strong> — 15 % temperature improvement.</li>
+                <li>Automated <strong>OCV + impedance testing</strong> in Python for 700 + cells (50 % faster).</li>
+                <li>Designed <strong>custom PCBs</strong> in Altium and 3D-printed fixtures for prototyping.</li>
+            </ul>
 
-                <p class="overview">
-                    Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle, delivering a total capacity of approximately
-                    <strong>5.25 kWh at 120 V</strong>. The pack was engineered for safety, serviceability, and manufacturability while optimizing cooling performance
-                    through CFD-based thermal modeling.
-                </p>
+            <h2>Tools Used</h2>
+            <p>SolidWorks  |  Altium Designer  |  Ansys & Altair CFD  |  Python  |  Composite Fabrication</p>
 
-                <h2>Engineering Highlights</h2>
-                <ul>
-                    <li><strong>7–8 mΩ contact resistance</strong> in a non-welded configuration — comparable to spot-welded setups (~6 mΩ).</li>
-                    <li><strong>Refined CAD layout</strong> within a 25 × 20 × 8 inch enclosure meeting packaging & safety constraints.</li>
-                    <li><strong>Validated cooling airflow</strong> via Ansys & Altair CFD — improved thermal performance by 15%.</li>
-                    <li><strong>Automated OCV + impedance testing</strong> in Python for 700+ cells, reducing testing time by 50%.</li>
-                    <li><strong>Developed PCB layouts</strong> in Altium and 3D-printed fixtures for prototype assembly.</li>
-                </ul>
-
-                <h2>Tools Used</h2>
-                <p>SolidWorks • Altium • Ansys/Altair CFD • Python • Composite Fabrication</p>
-
-                <h2>Impact</h2>
-                <p>
-                    Improved standardization for future battery testing workflows and enhanced reliability of module-level designs used by UBC Solar’s next-gen pack.
-                </p>
-
-                <div class="project-links">
-                    <a href="https://github.com/deevshah2302" target="_blank" class="btn">🔗 View GitHub Repo</a>
-                </div>
+            <div class="project-links">
+                <a href="https://github.com/deevshah2302" target="_blank">🔗 View GitHub Repo</a>
             </div>
         </div>
     </section>
@@ -55,5 +46,12 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
     <script src="script.js"></script>
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
