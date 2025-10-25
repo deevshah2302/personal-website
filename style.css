@@ -216,3 +216,80 @@ body {
     margin: 0 auto;
     padding: 2rem;
 }
+
+/* Back Button */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+    .back-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+/* Project Detail Layout */
+.project-detail {
+    max-width: 900px;
+    margin: 120px auto 100px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    color: #111;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+    .project-detail h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .project-detail .subtitle {
+        color: #444;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-detail .project-hero {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .project-detail .content h2 {
+        margin-top: 1.8rem;
+        font-size: 1.4rem;
+        color: #222;
+    }
+
+    .project-detail ul {
+        margin-left: 1.5rem;
+        color: #333;
+    }
+
+.project-links {
+    margin-top: 2rem;
+}
+
+    .project-links a {
+        background: #111;
+        color: white;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+        .project-links a:hover {
+            background: #333;
+        }

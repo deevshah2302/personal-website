@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Pack Design | Deev Shah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <div id="vanta-bg" style="position: fixed; inset: 0; z-index: -1;"></div>
+
+    <!-- Back Button -->
+    <a href="projects.html" class="back-btn">← Back to Projects</a>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <img src="battery-pack.jpg" alt="Battery Pack" class="project-hero">
+        <h1>Battery Pack Design for Solar EV</h1>
+        <p class="subtitle">UBC Solar — January 2025 – March 2025</p>
+
+        <div class="content">
+            <h2>Overview</h2>
+            <p>
+                Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle, delivering a total capacity of approximately
+                <strong>5.25 kWh at 120 V</strong>. The pack was engineered for safety, serviceability, and manufacturability while optimizing cooling performance
+                through CFD-based thermal modeling.
+            </p>
+
+            <h2>Engineering Highlights</h2>
+            <ul>
+                <li>Achieved <strong>7–8 mΩ contact resistance</strong> in a non-welded configuration — comparable to traditional spot-welded setups (~6 mΩ).</li>
+                <li>Refined <strong>CAD layout</strong> to fit within a <strong>25 × 20 × 8 inch</strong> enclosure while meeting packaging and safety constraints.</li>
+                <li>Validated <strong>cell spacing</strong> and airflow using <strong>Ansys & Altair CFD</strong>, improving pack thermal performance by 15 %.</li>
+                <li>Automated <strong>OCV + impedance testing</strong> in Python for 700 + cells, reducing testing time by 50 %.</li>
+                <li>Developed <strong>custom PCB layouts</strong> in Altium and 3D-printed fixtures for prototype assembly.</li>
+            </ul>
+
+            <h2>Tools & Techniques</h2>
+            <p>
+                SolidWorks (CAD) • Altium PCB Design • Ansys & Altair (CFD/FEA) • Python (automation scripts) • Composite testing (ASTM standards)
+            </p>
+
+            <h2>Impact</h2>
+            <p>
+                The pack design reduced electrical variability across cells, extended pack lifetime by ~2 years, and established a standardized workflow for
+                cell characterization within the UBC Solar team.
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/deevshah2302" target="_blank">🔗 View Related Work on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
