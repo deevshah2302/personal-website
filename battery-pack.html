@@ -6,8 +6,11 @@
     <title>Battery Pack Design | Deev Shah</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
 </head>
 <body>
+    <div id="background"></div>
     <div id="vanta-bg" style="position: fixed; inset: 0; z-index: -1;"></div>
 
     <!-- Back Button -->
@@ -46,6 +49,22 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#background",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x4361ee,
+            backgroundColor: 0x0a192f,
+            points: 10.00,
+            maxDistance: 20.00,
+            spacing: 18.00
+        });
+    </script>
 </body>
 </html>
 
