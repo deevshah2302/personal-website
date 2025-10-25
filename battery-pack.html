@@ -15,40 +15,39 @@
 
     <!-- Project Detail -->
     <section class="project-detail">
-        <img src="battery-pack.jpg" alt="Battery Pack" class="project-hero">
-        <h1>Battery Pack Design for Solar EV</h1>
-        <p class="subtitle">UBC Solar — January 2025 – March 2025</p>
+        <div class="project-card-container">
+            <img src="battery-pack.jpg" alt="Battery Pack" class="project-hero">
 
-        <div class="content">
-            <h2>Overview</h2>
-            <p>
-                Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle, delivering a total capacity of approximately
-                <strong>5.25 kWh at 120 V</strong>. The pack was engineered for safety, serviceability, and manufacturability while optimizing cooling performance
-                through CFD-based thermal modeling.
-            </p>
+            <div class="project-info">
+                <h1>Battery Pack Design for Solar EV</h1>
+                <p class="subtitle">UBC Solar — January 2025 – March 2025</p>
 
-            <h2>Engineering Highlights</h2>
-            <ul>
-                <li>Achieved <strong>7–8 mΩ contact resistance</strong> in a non-welded configuration — comparable to traditional spot-welded setups (~6 mΩ).</li>
-                <li>Refined <strong>CAD layout</strong> to fit within a <strong>25 × 20 × 8 inch</strong> enclosure while meeting packaging and safety constraints.</li>
-                <li>Validated <strong>cell spacing</strong> and airflow using <strong>Ansys & Altair CFD</strong>, improving pack thermal performance by 15 %.</li>
-                <li>Automated <strong>OCV + impedance testing</strong> in Python for 700 + cells, reducing testing time by 50 %.</li>
-                <li>Developed <strong>custom PCB layouts</strong> in Altium and 3D-printed fixtures for prototype assembly.</li>
-            </ul>
+                <p class="overview">
+                    Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle, delivering a total capacity of approximately
+                    <strong>5.25 kWh at 120 V</strong>. The pack was engineered for safety, serviceability, and manufacturability while optimizing cooling performance
+                    through CFD-based thermal modeling.
+                </p>
 
-            <h2>Tools & Techniques</h2>
-            <p>
-                SolidWorks (CAD) • Altium PCB Design • Ansys & Altair (CFD/FEA) • Python (automation scripts) • Composite testing (ASTM standards)
-            </p>
+                <h2>Engineering Highlights</h2>
+                <ul>
+                    <li><strong>7–8 mΩ contact resistance</strong> in a non-welded configuration — comparable to spot-welded setups (~6 mΩ).</li>
+                    <li><strong>Refined CAD layout</strong> within a 25 × 20 × 8 inch enclosure meeting packaging & safety constraints.</li>
+                    <li><strong>Validated cooling airflow</strong> via Ansys & Altair CFD — improved thermal performance by 15%.</li>
+                    <li><strong>Automated OCV + impedance testing</strong> in Python for 700+ cells, reducing testing time by 50%.</li>
+                    <li><strong>Developed PCB layouts</strong> in Altium and 3D-printed fixtures for prototype assembly.</li>
+                </ul>
 
-            <h2>Impact</h2>
-            <p>
-                The pack design reduced electrical variability across cells, extended pack lifetime by ~2 years, and established a standardized workflow for
-                cell characterization within the UBC Solar team.
-            </p>
+                <h2>Tools Used</h2>
+                <p>SolidWorks • Altium • Ansys/Altair CFD • Python • Composite Fabrication</p>
 
-            <div class="project-links">
-                <a href="https://github.com/deevshah2302" target="_blank">🔗 View Related Work on GitHub</a>
+                <h2>Impact</h2>
+                <p>
+                    Improved standardization for future battery testing workflows and enhanced reliability of module-level designs used by UBC Solar’s next-gen pack.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://github.com/deevshah2302" target="_blank" class="btn">🔗 View GitHub Repo</a>
+                </div>
             </div>
         </div>
     </section>
