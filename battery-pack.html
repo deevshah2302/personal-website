@@ -6,20 +6,19 @@
     <title>Battery Pack Design | Deev Shah</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- VANTA.js + Three.js -->
+    <!-- ✅ Correct background script -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.poly.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
 
     <style>
-        /* Ensure body and html fill the page */
         html, body {
             margin: 0;
             height: 100%;
-            overflow-x: hidden;
             font-family: 'Inter', sans-serif;
+            color: #111;
+            overflow-x: hidden;
         }
 
-        /* ✅ Vanta background setup */
         #background {
             position: fixed;
             top: 0;
@@ -29,11 +28,29 @@
             z-index: -1;
         }
 
-        /* ✅ Card-style layout */
+        .floating-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            color: #111;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: 0.2s ease;
+        }
+
+            .floating-btn:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+            }
+
         .project-container {
             display: flex;
             justify-content: center;
-            padding: 80px 20px;
+            padding: 100px 20px;
         }
 
         .project-card {
@@ -42,6 +59,7 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             max-width: 800px;
             padding: 2.5rem;
+            line-height: 1.7;
         }
 
             .project-card img {
@@ -50,14 +68,11 @@
                 margin-bottom: 1.5rem;
             }
 
-            .project-card h1 {
-                margin-bottom: 0.2rem;
-            }
-
         h2 {
             margin-top: 1.5rem;
             border-left: 4px solid #4361ee;
             padding-left: 10px;
+            color: #111;
         }
 
         ul {
@@ -67,10 +82,13 @@
 </head>
 
 <body>
-    <!-- ✅ Background container -->
+    <!-- ✅ Animated background -->
     <div id="background"></div>
 
-    <!-- ✅ Main project card -->
+    <!-- ✅ Back to Projects button -->
+    <a href="projects.html" class="floating-btn">← Back</a>
+
+    <!-- ✅ Project Card -->
     <main class="project-container">
         <div class="project-card">
             <img src="battery-pack.jpg" alt="Battery Pack Design">
@@ -97,9 +115,10 @@
         </div>
     </main>
 
+    <!-- ✅ Correct background animation (matches Projects page) -->
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-            VANTA.POLY({
+            VANTA.WAVES({
                 el: "#background",
                 mouseControls: true,
                 touchControls: true,
@@ -108,22 +127,14 @@
                 minWidth: 200.00,
                 scale: 1.00,
                 scaleMobile: 1.00,
-                color: 0x1b263b,              // base polygon color (bluish grey)
-                shininess: 40.00,
+                color: 0x4361ee,
+                shininess: 50.00,
                 waveHeight: 20.00,
-                waveSpeed: 0.5,
-                zoom: 1.10,
-                backgroundColor: 0x0a192f,    // dark navy blue background
+                waveSpeed: 0.7,
+                zoom: 0.95,
+                backgroundColor: 0x0a192f
             });
         });
     </script>
-
-</body>
-</html>
-
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
