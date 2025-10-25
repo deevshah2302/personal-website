@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battery Pack Design | Deev Shah</title>
 
-    <!-- VANTA.js Background (same as Projects page) -->
+    <!-- VANTA.js Background -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
 
@@ -16,21 +16,19 @@
         html, body {
             margin: 0;
             height: 100%;
-            width: 100%;
             overflow-x: hidden;
+            background: transparent !important;
             font-family: 'Inter', sans-serif;
-            background: #0d1117; /* fallback */
-            color: #111;
         }
 
-        /* Fullscreen animated background */
+        /* Animated background */
         #vanta-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: -1;
+            z-index: 0;
         }
 
         /* Floating back button */
@@ -38,38 +36,39 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #ffffff;
+            background: #fff;
             color: #111;
             text-decoration: none;
             font-weight: 600;
             padding: 10px 18px;
             border-radius: 50px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
             transition: 0.25s ease;
             z-index: 10;
         }
 
             .floating-btn:hover {
                 transform: scale(1.07);
-                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+                box-shadow: 0 6px 24px rgba(0,0,0,0.25);
             }
 
-        /* Main card layout */
+        /* Card layout */
         .project-container {
             display: flex;
             justify-content: center;
-            padding: 100px 20px;
+            align-items: flex-start;
+            padding: 120px 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .project-card {
             background: rgba(255, 255, 255, 0.96);
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
             max-width: 800px;
             padding: 2.5rem;
             line-height: 1.7;
-            position: relative;
-            z-index: 5;
         }
 
             .project-card img {
@@ -92,7 +91,7 @@
 </head>
 
 <body>
-    <!-- Animated background -->
+    <!-- Vanta background -->
     <div id="vanta-bg"></div>
 
     <!-- Floating Back Button -->
@@ -107,8 +106,9 @@
             <p><strong>UBC Solar</strong> — Jan 2025 to Mar 2025</p>
 
             <p>
-                Designed and developed a <strong>32S13P Li-ion battery pack</strong> delivering <strong>5.25 kWh @ 120 V</strong>.
-                Optimized for safety, modularity, and manufacturability through <strong>CFD-based thermal modeling</strong>.
+                Designed and developed a <strong>32S13P Li-ion battery pack</strong> delivering
+                <strong>5.25 kWh @ 120 V</strong>. Optimized for safety, modularity, and manufacturability through
+                <strong>CFD-based thermal modeling</strong>.
             </p>
 
             <h2>Key Highlights</h2>
@@ -125,26 +125,29 @@
         </div>
     </main>
 
-    <!-- Vanta Background Script (exact same settings as projects.html) -->
+    <!-- Initialize Waves Background -->
     <script>
-        VANTA.WAVES({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x30475e,
-            backgroundColor: 0x0d1117,
-            shininess: 35,
-            waveHeight: 20,
-            waveSpeed: 0.5,
-            zoom: 0.85
+        window.addEventListener("DOMContentLoaded", () => {
+            VANTA.WAVES({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x30475e,
+                backgroundColor: 0x0d1117,
+                shininess: 35,
+                waveHeight: 20,
+                waveSpeed: 0.5,
+                zoom: 0.85
+            });
         });
     </script>
 </body>
 </html>
+
 
 
 
