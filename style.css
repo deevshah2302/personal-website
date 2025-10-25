@@ -530,3 +530,23 @@ main, .project-card, .floating-btn {
     position: relative;
     z-index: 2;
 }
+.floating-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* move to right side */
+    background: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.25s ease;
+    z-index: 10; /* ensures it’s above VANTA background */
+    white-space: nowrap; /* prevents text cutoff */
+}
+
+    .floating-btn:hover {
+        transform: scale(1.07);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    }
