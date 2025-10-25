@@ -86,58 +86,60 @@
 </head>
 
 <body>
-  <!-- ✅ Animated background container -->
-  <div id="background"></div>
+    <!-- ✅ Animated background container -->
+    <div id="background"></div>
 
-  <!-- ✅ Back button -->
-  <a href="projects.html" class="floating-btn">← Back</a>
+    <!-- ✅ Back button -->
+    <a href="projects.html" class="floating-btn">← Back</a>
 
-  <!-- ✅ Main card -->
-  <main class="project-container">
-    <div class="project-card">
-      <img src="battery-pack.jpg" alt="Battery Pack Design">
+    <!-- ✅ Main card -->
+    <main class="project-container">
+        <div class="project-card">
+            <img src="battery-pack.jpg" alt="Battery Pack Design">
 
-      <h1>Battery Pack Design for Solar EV</h1>
-      <p><strong>UBC Solar</strong> — Jan 2025 to Mar 2025</p>
+            <h1>Battery Pack Design for Solar EV</h1>
+            <p><strong>UBC Solar</strong> — Jan 2025 to Mar 2025</p>
 
-      <p>Designed and developed a <strong>32S13P Li-ion battery pack</strong> delivering <strong>5.25 kWh @ 120 V</strong>.
-      Optimized for safety, modularity, and manufacturability through <strong>CFD-based thermal modeling</strong>.</p>
+            <p>
+                Designed and developed a <strong>32S13P Li-ion battery pack</strong> delivering <strong>5.25 kWh @ 120 V</strong>.
+                Optimized for safety, modularity, and manufacturability through <strong>CFD-based thermal modeling</strong>.
+            </p>
 
-      <h2>Key Highlights</h2>
-      <ul>
-        <li>7–8 mΩ contact resistance using non-welded design</li>
-        <li>CAD optimized for compact 25×20×8 inch housing</li>
-        <li>Validated cooling airflow via <strong>Ansys & Altair CFD</strong> (+15% improvement)</li>
-        <li>Automated OCV + impedance testing in Python</li>
-        <li>Custom PCBs in Altium & 3D printed fixtures</li>
-      </ul>
+            <h2>Key Highlights</h2>
+            <ul>
+                <li>7–8 mΩ contact resistance using non-welded design</li>
+                <li>CAD optimized for compact 25×20×8 inch housing</li>
+                <li>Validated cooling airflow via <strong>Ansys & Altair CFD</strong> (+15% improvement)</li>
+                <li>Automated OCV + impedance testing in Python</li>
+                <li>Custom PCBs in Altium & 3D printed fixtures</li>
+            </ul>
 
-      <h2>Tools Used</h2>
-      <p>SolidWorks | Altium Designer | Python | CFD | Composite Fabrication</p>
-    </div>
-  </main>
+            <h2>Tools Used</h2>
+            <p>SolidWorks | Altium Designer | Python | CFD | Composite Fabrication</p>
+        </div>
+    </main>
 
-  <!-- ✅ Correct Vanta initialization -->
-  <script>
-  window.addEventListener("load", () => {
-    VANTA.WAVES({
-      el: "#background",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x4361ee,
-      shininess: 40.00,
-      waveHeight: 20.00,
-      waveSpeed: 0.8,
-      zoom: 0.95,
-      backgroundColor: 0x0a192f
-    });
-  });
-  </script>
+    <!-- ✅ Correct Vanta initialization -->
+    <script>
+        window.addEventListener("load", () => {
+            VANTA.WAVES({
+                el: "#background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x4361ee,
+                shininess: 40.00,
+                waveHeight: 20.00,
+                waveSpeed: 0.8,
+                zoom: 0.95,
+                backgroundColor: 0x0a192f
+            });
+        });
+    </script>
 </body>
 </html>
 
