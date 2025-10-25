@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deev Shah</title>
+
+    <!-- VANTA.js dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background container for animated waves -->
+    <div id="vanta-bg"></div>
+
+    <!-- Floating Projects Button -->
+    <a href="projects.html" class="floating-btn">Projects →</a>
+
+    <!-- Hero Section -->
+    <section class="intro">
+        <div class="card profile-card">
+            <img src="profile.jpg" alt="Deev Shah">
+        </div>
+
+        <div class="card bio-card">
+            <h1>DEEV SHAH</h1>
+            <h3>Manufacturing Engineering Co-op Student @ UBC Vancouver</h3>
+            <p>I love designing systems that merge sustainability and technology. From Solar EV battery packs to aerodynamic composite structures, my focus lies in building practical engineering solutions that move us towards a renewable future!</p>
+            <div class="socials">
+                <a href="https://github.com/deevshah2302"><img src="github.svg" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/deev-shah-0741091b3"><img src="linkedin.svg" alt="LinkedIn"></a>
+                <a href="mailto:deevshah23022004@gmail.com"><img src="email.png" alt="Email"></a>
+                <a href="Deev_Shah_Resume.pdf" download>
+                    <img src="resume.svg" alt="Resume" title="Download Resume">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="card text-card">
+            <h2>EXPERIENCE</h2>
+            <ul>
+                <li>Battery Mechanical Team Lead at UBC Solar Car Racing</li>
+                <li>VP Finance at UBC JSA</li>
+                <li>Undergraduate Research Assistant at Manufacturing Automation and Robotics Lab</li>
+            </ul>
+            <h2>EDUCATION</h2>
+            <p>B.A.Sc. in Manufacturing Engineering at The University of British Columbia (2023–2027)</p>
+        </div>
+
+        <div class="card skills-card">
+            <h2>TOP SKILLS</h2>
+            <ul>
+                <li>SolidWorks</li>
+                <li>Altium Designer</li>
+                <li>FEA / CFD</li>
+                <li>Li-ion Cell Testing</li>
+                <li>Composite Fabrication</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Initialize the background -->
+    <script>
+        let vantaEffect = VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x30475e,           // deep blue-gray waves
+            backgroundColor: 0x0d1117, // subtle dark navy
+            shininess: 35,
+            waveHeight: 20,
+            waveSpeed: 0.5,
+            zoom: 0.85
+
+        });
+    </script>
+</body>
+</html>

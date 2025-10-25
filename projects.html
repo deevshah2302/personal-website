@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Deev Shah</title>
+
+    <!-- VANTA.js Background -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Floating Home Button -->
+    <a href="index.html" class="floating-btn secondary">← Home</a>
+
+    <!-- Page Header -->
+    <section class="intro projects-header">
+        <div class="card header-card">
+            <h1>Projects</h1>
+            <p>A showcase of engineering, design, and fabrication work — blending sustainability, mechanics, and creativity.</p>
+        </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="project-grid">
+
+        <a href="battery-pack.html" class="project-card">
+            <img src="battery-pack.jpg" alt="Battery Pack Design">
+            <div class="project-text">
+                <h2>Stack Battery Pack Design</h2>
+                <p>130 V, 5.25 kWh Li-ion pack for a solar race car using SolidWorks, Altium, and Ansys. Optimized for cooling and modular assembly.</p>
+            </div>
+        </a>
+
+        <a href="ocv-sorting.html" class="project-card">
+            <img src="ocv-sorting.jpg" alt="OCV Sorting Script">
+            <div class="project-text">
+                <h2>OCV Sorting Automated Script</h2>
+                <p>Python-based automation tool for sorting 700+ cells by voltage and impedance, improving data consistency and testing speed.</p>
+            </div>
+        </a>
+
+        <a href="ultrasonic-robot.html" class="project-card">
+            <img src="ultrasonic-robot.jpg" alt="Ultrasonic Robot">
+            <div class="project-text">
+                <h2>Ultrasonic Sensor Robot</h2>
+                <p>Arduino-based robot with ultrasonic sensor for autonomous navigation and obstacle detection. Won “Best Rescue Robot.”</p>
+            </div>
+        </a>
+        <a href="cell-database.html" class="project-card">
+            <img src="database.jpg" alt="Cell Database">
+            <div class="project-text">
+                <h2>Cell Database</h2>
+                <p>Created a local database using Streamlit and Pandas to facilitate viewing and editing cell data.</p>
+            </div>
+        </a>
+        <a href="Flapperjacks.html" class="project-card">
+            <img src="Flapperjacks.jpg" alt="Flapperjacks.exe">
+            <div class="project-text">
+                <h2>Flapperjacks.exe</h2>
+                <p>Created a 2D Game on Unity using sprite rendering, 2D Physics, and sounds.</p>
+            </div>
+        </a>
+
+        <a href="tail-fairing.html" class="project-card">
+            <img src="fairing.jpg" alt="Tail Fairing Fabrication">
+            <div class="project-text">
+                <h2>Tail Fairing Fabrication</h2>
+                <p>Designed and manufactured aerodynamic fairings using CNC molds, vacuum infusion, and carbon-fiber layups.</p>
+            </div>
+        </a>
+
+        <a href="projects/bluetooth-speaker.html" class="project-card">
+            <img src="speaker.jpg" alt="Bluetooth Speaker">
+            <div class="project-text">
+                <h2>Bluetooth Speaker</h2>
+                <p>Developing a Class-D amplifier Bluetooth speaker powered by 18650 Li-ion cells with integrated BMS and custom 3D-printed housing.</p>
+            </div>
+        </a>
+
+
+    </section>
+
+    <!-- Vanta Background -->
+    <script>
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x30475e,
+            backgroundColor: 0x0d1117,
+            shininess: 35,
+            waveHeight: 20,
+            waveSpeed: 0.5,
+            zoom: 0.85
+        });
+    </script>
+
+</body>
+</html>
