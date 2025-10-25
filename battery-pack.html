@@ -121,23 +121,20 @@
 
     <!-- ✅ Correct Vanta initialization -->
     <script>
-        window.addEventListener("load", () => {
-            VANTA.WAVES({
-                el: "#background",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: 0x30475e,
-                shininess: 40.00,
-                waveHeight: 20.00,
-                waveSpeed: 0.8,
-                zoom: 0.95,
-                backgroundColor: 0x0a192f
-            });
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x30475e,
+            backgroundColor: 0x0d1117,
+            shininess: 35,
+            waveHeight: 20,
+            waveSpeed: 0.5,
+            zoom: 0.85
         });
     </script>
 </body>
