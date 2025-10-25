@@ -14,20 +14,23 @@
         html, body {
             margin: 0;
             height: 100%;
-            font-family: 'Inter', sans-serif;
-            color: #111;
+            width: 100%;
             overflow-x: hidden;
+            font-family: "Inter", sans-serif;
+            background: #0a192f; /* fallback if Vanta fails */
         }
 
+        /* ✅ Fullscreen background for Vanta */
         #background {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             z-index: -1;
         }
 
+        /* ✅ Floating back button */
         .floating-btn {
             position: fixed;
             top: 20px;
@@ -47,6 +50,7 @@
                 box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
             }
 
+        /* ✅ Card layout */
         .project-container {
             display: flex;
             justify-content: center;
@@ -54,7 +58,7 @@
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.96);
             border-radius: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             max-width: 800px;
@@ -82,13 +86,13 @@
 </head>
 
 <body>
-    <!-- ✅ Animated background -->
+    <!-- ✅ Animated background container -->
     <div id="background"></div>
 
-    <!-- ✅ Back to Projects button -->
+    <!-- ✅ Back button -->
     <a href="projects.html" class="floating-btn">← Back</a>
 
-    <!-- ✅ Project Card -->
+    <!-- ✅ Main card -->
     <main class="project-container">
         <div class="project-card">
             <img src="battery-pack.jpg" alt="Battery Pack Design">
@@ -115,9 +119,9 @@
         </div>
     </main>
 
-    <!-- ✅ Correct background animation (matches Projects page) -->
+    <!-- ✅ Correct Vanta initialization -->
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener("load", () => {
             VANTA.WAVES({
                 el: "#background",
                 mouseControls: true,
@@ -128,9 +132,9 @@
                 scale: 1.00,
                 scaleMobile: 1.00,
                 color: 0x4361ee,
-                shininess: 50.00,
+                shininess: 40.00,
                 waveHeight: 20.00,
-                waveSpeed: 0.7,
+                waveSpeed: 0.8,
                 zoom: 0.95,
                 backgroundColor: 0x0a192f
             });
@@ -138,3 +142,4 @@
     </script>
 </body>
 </html>
+
