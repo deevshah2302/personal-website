@@ -123,18 +123,3 @@ h2 {
     margin-bottom: 60px;
   }
 }
-function openModal(id) {
-    document.getElementById(id).style.display = 'flex';
-}
-
-function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-}
-
-// Optional: close when clicking outside modal
-window.onclick = function (e) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (e.target === modal) modal.style.display = 'none';
-    });
-};

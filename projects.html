@@ -27,68 +27,67 @@
         </div>
     </section>
 
+    <!-- Project Grid -->
     <section class="project-grid">
 
-        <!-- Card 1 -->
-        <div class="project-card" onclick="openModal('modal1')">
-            <img src="battery-pack.jpg" alt="Battery Pack">
+        <a href="battery-pack.html" class="project-card">
+            <img src="battery-pack.jpg" alt="Battery Pack Design">
             <div class="project-text">
-                <h2>Battery Pack Design</h2>
-                <p>5.25 kWh Li-ion pack for solar EVs with modular and thermally optimized design.</p>
+                <h2>Stack Battery Pack Design</h2>
+                <p>130 V, 5.25 kWh Li-ion pack for a solar race car using SolidWorks, Altium, and Ansys. Optimized for cooling and modular assembly.</p>
             </div>
-        </div>
+        </a>
 
-        <!-- Card 2 -->
-        <div class="project-card" onclick="openModal('modal2')">
-            <img src="ocv-sorting.jpg" alt="OCV Sorting">
+        <a href="ocv-sorting.html" class="project-card">
+            <img src="ocv-sorting.jpg" alt="OCV Sorting Script">
             <div class="project-text">
-                <h2>OCV Sorting Automation</h2>
-                <p>Python-based cell characterization and automated sorting workflow.</p>
+                <h2>OCV Sorting Automated Script</h2>
+                <p>Python-based automation tool for sorting 700+ cells by voltage and impedance, improving data consistency and testing speed.</p>
             </div>
-        </div>
+        </a>
 
-        <!-- Add more cards here -->
+        <a href="ultrasonic-robot.html" class="project-card">
+            <img src="ultrasonic-robot.jpg" alt="Ultrasonic Robot">
+            <div class="project-text">
+                <h2>Ultrasonic Sensor Robot</h2>
+                <p>Arduino-based robot with ultrasonic sensor for autonomous navigation and obstacle detection. Won “Best Rescue Robot.”</p>
+            </div>
+        </a>
+
+        <a href="cell-database.html" class="project-card">
+            <img src="database.jpg" alt="Cell Database">
+            <div class="project-text">
+                <h2>Cell Database</h2>
+                <p>Created a local database using Streamlit and Pandas to facilitate viewing and editing cell data.</p>
+            </div>
+        </a>
+
+        <a href="Flapperjacks.html" class="project-card">
+            <img src="Flapperjacks.jpg" alt="Flapperjacks.exe">
+            <div class="project-text">
+                <h2>Flapperjacks.exe</h2>
+                <p>Created a 2D Game on Unity using sprite rendering, 2D Physics, and sounds.</p>
+            </div>
+        </a>
+
+        <a href="tail-fairing.html" class="project-card">
+            <img src="fairing.jpg" alt="Tail Fairing Fabrication">
+            <div class="project-text">
+                <h2>Tail Fairing Fabrication</h2>
+                <p>Designed and manufactured aerodynamic fairings using CNC molds, vacuum infusion, and carbon-fiber layups.</p>
+            </div>
+        </a>
+
+        <a href="bluetooth-speaker.html" class="project-card">
+            <img src="speaker.jpg" alt="Bluetooth Speaker">
+            <div class="project-text">
+                <h2>Bluetooth Speaker</h2>
+                <p>Developing a Class-D amplifier Bluetooth speaker powered by 18650 Li-ion cells with integrated BMS and custom 3D-printed housing.</p>
+            </div>
+        </a>
+
     </section>
 
-    <!-- 🪟 MODALS -->
-    <!-- Modal 1 -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <img src="battery-pack.jpg" class="modal-img" alt="Battery Pack">
-            <h1>Battery Pack Design for Solar EV</h1>
-            <p><strong>UBC Solar</strong> — Jan 2025 – Mar 2025</p>
-
-            <p>
-                Designed and developed a <strong>32S13P Li-ion battery pack</strong> for UBC Solar’s race vehicle,
-                delivering <strong>5.25 kWh @ 120 V</strong>. Optimized for safety, serviceability, and manufacturability
-                using CFD-based thermal modeling.
-            </p>
-
-            <h2>Highlights</h2>
-            <ul>
-                <li>7–8 mΩ non-welded contact resistance.</li>
-                <li>Validated airflow via <strong>Ansys & Altair CFD</strong> (15 % improvement).</li>
-                <li>OCV + impedance testing automation in Python for 700+ cells.</li>
-                <li>Custom Altium PCB design + 3D-printed fixtures.</li>
-            </ul>
-
-            <div class="project-links">
-                <a href="https://github.com/deevshah2302" target="_blank">🔗 View GitHub Repo</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <img src="ocv-sorting.jpg" class="modal-img" alt="OCV Sorting">
-            <h1>OCV Sorting Automated Script</h1>
-            <p>Python | Pandas | Matplotlib</p>
-            <p>Automated voltage + impedance sorting for 700 cells, improving consistency and reducing testing time by 50 %.</p>
-        </div>
-    </div>
 
     <!-- Vanta Background -->
     <script>
