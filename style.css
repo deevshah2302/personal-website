@@ -509,3 +509,24 @@ body {
     left: 0;
     z-index: -1;
 }
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+#vanta-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+main, .project-card, .floating-btn {
+    position: relative;
+    z-index: 2;
+}
