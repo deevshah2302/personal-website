@@ -1,133 +1,159 @@
-﻿/* Fullscreen animated background */
+﻿/* ===========================
+   BACKGROUND + BASE STYLES
+=========================== */
+
 #vanta-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;  /* keep it behind everything */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* keep it behind everything */
 }
 
-/* Page base */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #111;
-  overflow-x: hidden;
+html, body {
+    margin: 0;
+    height: 100%;
+    background: transparent;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
 }
 
-/* Floating Projects Button */
+/* ===========================
+   FLOATING BUTTON (Home / Projects)
+=========================== */
+
 .floating-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: white;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 40px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease;
-  z-index: 10;
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    background: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.25s ease;
+    z-index: 1000;
+    white-space: nowrap;
 }
 
-.floating-btn:hover {
-  transform: translateY(-2px);
-}
+    .floating-btn:hover {
+        transform: scale(1.07);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    }
 
-/* Card styling */
+/* ===========================
+   CARD BASE STYLES
+=========================== */
+
 .card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-  padding: 20px;
-  z-index: 5;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    padding: 20px;
+    z-index: 5;
 }
 
-/* Intro section layout */
+/* ===========================
+   INTRO SECTION
+=========================== */
+
 .intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 100px 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px;
+    flex-wrap: wrap;
 }
 
 .profile-card img {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
-  object-fit: cover;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .bio-card {
-  max-width: 600px;
+    max-width: 600px;
 }
 
-.bio-card h1 {
-  font-size: 2.4em;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-}
+    .bio-card h1 {
+        font-size: 2.4em;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
 
-.bio-card h3 {
-  margin-top: 5px;
-  color: #444;
-  font-weight: 500;
-}
+    .bio-card h3 {
+        margin-top: 5px;
+        color: #444;
+        font-weight: 500;
+    }
 
-.bio-card p {
-  color: #333;
-  line-height: 1.6;
-}
+    .bio-card p {
+        color: #333;
+        line-height: 1.6;
+    }
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
 
 .socials img {
-  width: 50px;
-  margin-right: 12px;
-  filter: grayscale(1);
-  transition: 0.3s;
+    width: 50px;
+    margin-right: 12px;
+    filter: grayscale(1);
+    transition: 0.3s;
 }
 
-.socials img:hover {
-  filter: grayscale(0);
-}
+    .socials img:hover {
+        filter: grayscale(0);
+    }
 
-/* Experience section */
+/* ===========================
+   EXPERIENCE + EDUCATION
+=========================== */
+
 .experience {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 20px;
 }
 
 .text-card {
-  flex: 2;
-  min-width: 300px;
+    flex: 2;
+    min-width: 300px;
 }
 
 .skills-card {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+    min-width: 250px;
 }
 
-.skills-card ul {
-  list-style: none;
-  padding: 0;
-}
+    .skills-card ul {
+        list-style: none;
+        padding: 0;
+    }
 
-.skills-card li {
-  background: #000;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  font-size: 0.95em;
-}
+    .skills-card li {
+        background: #000;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        font-size: 0.95em;
+    }
+
+/* ===========================
+   PROJECTS PAGE HEADER
+=========================== */
+
 .projects-header {
     text-align: center;
     padding: 80px 20px 40px;
@@ -140,7 +166,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 30px;
-    color: #f1f1f1;
+    color: #111;
 }
 
     .header-card h1 {
@@ -154,7 +180,10 @@ body {
         line-height: 1.6;
     }
 
-/* Project Grid */
+/* ===========================
+   PROJECT GRID
+=========================== */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -162,9 +191,13 @@ body {
     max-width: 1100px;
     margin: 40px auto 100px;
     padding: 0 20px;
+    justify-items: center;
 }
 
-/* Project Card */
+/* ===========================
+   PROJECT CARDS
+=========================== */
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -175,6 +208,7 @@ body {
     transition: 0.3s ease;
     text-decoration: none;
     color: #000000;
+    max-width: 350px;
 }
 
     .project-card:hover {
@@ -184,7 +218,7 @@ body {
 
     .project-card img {
         width: 100%;
-        height: 220px;
+        height: 230px;
         object-fit: cover;
     }
 
@@ -204,20 +238,10 @@ body {
         line-height: 1.5;
     }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    /* These lines center the grid */
-    justify-content: center;
-    align-content: start;
-    /* Optional: limit total width */
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
-}
+/* ===========================
+   BACK BUTTON (← Back to Projects)
+=========================== */
 
-/* Back Button */
 .back-btn {
     position: fixed;
     top: 20px;
@@ -237,62 +261,9 @@ body {
         background: rgba(255, 255, 255, 0.2);
     }
 
-/* Project Detail Layout */
-.project-detail {
-    max-width: 900px;
-    margin: 120px auto 100px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 2rem;
-    color: #111;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-    .project-detail h1 {
-        margin-bottom: 0.5rem;
-        font-size: 2rem;
-    }
-
-    .project-detail .subtitle {
-        color: #444;
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-    }
-
-    .project-detail .project-hero {
-        width: 100%;
-        border-radius: 12px;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .project-detail .content h2 {
-        margin-top: 1.8rem;
-        font-size: 1.4rem;
-        color: #222;
-    }
-
-    .project-detail ul {
-        margin-left: 1.5rem;
-        color: #333;
-    }
-
-.project-links {
-    margin-top: 2rem;
-}
-
-    .project-links a {
-        background: #111;
-        color: white;
-        text-decoration: none;
-        padding: 10px 16px;
-        border-radius: 8px;
-        transition: background 0.3s ease;
-    }
-
-        .project-links a:hover {
-            background: #333;
-        }
+/* ===========================
+   PROJECT DETAIL PAGE
+=========================== */
 
 .project-detail {
     display: flex;
@@ -319,6 +290,8 @@ body {
     border-radius: 16px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    object-fit: cover;
 }
 
 .project-info h1 {
@@ -366,71 +339,10 @@ body {
         opacity: 0.85;
     }
 
-.project-card {
-    max-width: 900px;
-    margin: 5rem auto;
-    background: white;
-    border-radius: 20px;
-    padding: 2rem 3rem;
-    color: #111;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+/* ===========================
+   MODAL STYLING (POPUP VIEW)
+=========================== */
 
-    .project-card h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: #000;
-    }
-
-    .project-card h3 {
-        font-weight: 500;
-        color: #555;
-        margin-bottom: 1.5rem;
-    }
-
-    .project-card h2 {
-        font-size: 1.2rem;
-        color: #222;
-        margin-top: 1.8rem;
-        border-left: 4px solid #0072ff;
-        padding-left: 10px;
-    }
-
-    .project-card p,
-    .project-card li {
-        color: #333;
-        line-height: 1.6;
-    }
-
-    .project-card ul {
-        margin-left: 1.5rem;
-    }
-
-    .project-card .project-image {
-        width: 100%;
-        border-radius: 15px;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-.project-links {
-    margin-top: 2rem;
-}
-
-    .project-links a {
-        background: #000;
-        color: white;
-        text-decoration: none;
-        padding: 10px 16px;
-        border-radius: 8px;
-        transition: background 0.3s ease;
-    }
-
-        .project-links a:hover {
-            background: #333;
-        }
-
-/* 🔹 Modal Background */
 .modal {
     display: none;
     position: fixed;
@@ -442,7 +354,6 @@ body {
     animation: fadeIn 0.3s ease;
 }
 
-/* 🔹 Modal Card */
 .modal-content {
     background: white;
     color: #111;
@@ -456,14 +367,12 @@ body {
     position: relative;
 }
 
-/* 🔹 Image inside modal */
 .modal-img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1.5rem;
 }
 
-/* 🔹 Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -500,53 +409,3 @@ body {
         opacity: 1;
     }
 }
-
-#background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-html, body {
-    margin: 0;
-    height: 100%;
-    background: transparent;
-    overflow-x: hidden;
-}
-
-#vanta-bg {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-main, .project-card, .floating-btn {
-    position: relative;
-    z-index: 2;
-}
-.floating-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px; /* move to right side */
-    background: #ffffff;
-    color: #111111;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 50px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    transition: 0.25s ease;
-    z-index: 10; /* ensures it’s above VANTA background */
-    white-space: nowrap; /* prevents text cutoff */
-}
-
-    .floating-btn:hover {
-        transform: scale(1.07);
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
-    }
