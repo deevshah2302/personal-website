@@ -8,7 +8,7 @@
 
     <!-- VANTA.js + Three.js -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.poly.min.js"></script>
 
     <style>
         /* Ensure body and html fill the page */
@@ -97,10 +97,9 @@
         </div>
     </main>
 
-    <!-- ✅ Initialize Vanta background -->
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-            VANTA.NET({
+            VANTA.POLY({
                 el: "#background",
                 mouseControls: true,
                 touchControls: true,
@@ -109,14 +108,16 @@
                 minWidth: 200.00,
                 scale: 1.00,
                 scaleMobile: 1.00,
-                color: 0x4361ee,
-                backgroundColor: 0x0a192f,
-                points: 12.00,
-                maxDistance: 20.00,
-                spacing: 16.00
+                color: 0x1b263b,              // base polygon color (bluish grey)
+                shininess: 40.00,
+                waveHeight: 20.00,
+                waveSpeed: 0.5,
+                zoom: 1.10,
+                backgroundColor: 0x0a192f,    // dark navy blue background
             });
         });
     </script>
+
 </body>
 </html>
 
