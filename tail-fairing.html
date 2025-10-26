@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tail Fairing | Deev Shah</title>
+
+    <!-- VANTA dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow-x: hidden;
+            background: transparent !important;
+            font-family: "Inter", sans-serif;
+        }
+
+        /* Fullscreen animated background */
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            background: transparent;
+        }
+
+        /* back button */
+        .floating-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #111;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: 0.25s ease;
+            z-index: 10;
+        }
+
+            .floating-btn:hover {
+                transform: scale(1.07);
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+            }
+
+        /* Main content */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 120px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            max-width: 800px;
+            padding: 2.5rem;
+            line-height: 1.7;
+            position: relative;
+        }
+
+            .project-card img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+
+        h2 {
+            margin-top: 1.5rem;
+            border-left: 4px solid #4361ee;
+            padding-left: 10px;
+            color: #111;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Vanta background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Back button -->
+    <a href="projects.html" class="floating-btn">← Back</a>
+
+    <!-- Content -->
+    <main class="project-container">
+        <div class="project-card">
+            <img src="tail-fairing.jpg" alt="Flapperjacks.exe" />
+
+            <h1>Carbon Fibre Tail Fairing</h1>
+            <p><strong>UBC Thunderbikes</strong> - Jan 2024 to March 2024</p>
+
+            <p>
+                Designed the <strong>motorcycle tail fairing</strong> and
+                <strong>gas tank assembly</strong> to enhance
+                <strong>aerodynamic form</strong>, <strong>ergonomics</strong>, and
+                <strong>manufacturability</strong>. Utilized
+                <strong>photogrammetry</strong> and <strong>CNC machining</strong>
+                to ensure accurate geometry capture and precise mold fabrication.
+            </p>
+
+            <h2>Key Highlights</h2>
+            <ul>
+                <li>
+                    Used <strong>photogrammetry</strong> to generate a detailed 3D model
+                    of the <strong>motorcycle gas tank</strong> from high-resolution images.
+                </li>
+
+                <li>
+                    Processed point clouds and surface meshes into
+                    <strong>CAD geometry</strong> for design alignment and reference.
+                </li>
+
+                <li>
+                    <strong>Designed and CNC-machined foam molds</strong> for the
+                    <strong>tail fairing</strong> and <strong>gas tank</strong>,
+                    ensuring dimensional accuracy and smooth composite layup surfaces.
+                </li>
+
+               <li> <strong>Manufactured</strong> gas tank and tail fairing using <strong>vacuum-assisted wet layup techniques</strong></li>
+            </ul>
+
+            <h2>Tools Used</h2>
+            <p>Wet Layups | Photogrammetry | SolidWorks | CNC </p>
+        </div>
+    </main>
+
+    <!-- Initialize Waves Background -->
+    <script>
+        window.addEventListener("load", function () {
+            if (window.VANTA) {
+                VANTA.WAVES({
+                    el: "#vanta-bg",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0x30475e,
+                    backgroundColor: 0x0d1117,
+                    shininess: 35,
+                    waveHeight: 20.0,
+                    waveSpeed: 0.5,
+                    zoom: 0.85,
+                });
+            } else {
+                console.error("VANTA failed to load");
+            }
+        });
+    </script>
+</body>
+</html>
