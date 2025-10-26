@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Battery Pack Design | Deev Shah</title>
+    <title>Ultrasonic Robot | Deev Shah</title>
 
-    <!-- ✅ VANTA dependencies -->
+    <!-- VANTA dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
 
@@ -21,7 +21,7 @@
             font-family: "Inter", sans-serif;
         }
 
-        /* ✅ Fullscreen animated background */
+        /* Fullscreen animated background */
         #vanta-bg {
             position: fixed;
             top: 0;
@@ -32,7 +32,7 @@
             background: transparent;
         }
 
-        /* ✅ Floating back button */
+        /* back button */
         .floating-btn {
             position: fixed;
             top: 20px;
@@ -53,7 +53,7 @@
                 box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
             }
 
-        /* ✅ Main content */
+        /* Main content */
         .project-container {
             display: flex;
             justify-content: center;
@@ -79,7 +79,7 @@
                 object-fit: cover;
                 border-radius: 12px;
                 margin-bottom: 1.5rem;
-                display:block;
+                display: block;
             }
 
         h2 {
@@ -96,7 +96,7 @@
 </head>
 
 <body>
-    <!-- ✅ Vanta background -->
+    <!--Vanta background -->
     <div id="vanta-bg"></div>
 
     <!-- Back button -->
@@ -105,36 +105,35 @@
     <!-- Content -->
     <main class="project-container">
         <div class="project-card">
-            <img src="battery-pack.jpg" alt="Battery Pack Design" />
+            <img src="ultrasonic-robot.jpg" alt="Ultrasonic Sensor Robot" />
 
-            <h1>Battery Pack Design for Solar EV</h1>
-            <p><strong>UBC Solar</strong> — Jan 2025 to Mar 2025</p>
+            <h1>Arduino-based Ultrasonic Sensor Robot</h1>
+            <p><strong>High School Project</strong> — 2020</p>
 
             <p>
-                Designed and developed a <strong>32S13P Li-ion battery pack</strong>
-                delivering <strong>5.25 kWh @ 120 V</strong>. Optimized for safety,
-                modularity, and manufacturability through
-                <strong>CFD-based thermal modeling</strong>.
+                Led a team that developed an <strong>ultrasonic sensor robot</strong> designed to
+                traverse an <strong>obstacle course</strong> and retrieve multiple objects autonomously.
+                The robot utilized <strong>ultrasonic distance sensing</strong> for pathfinding and
+                object detection, achieving high navigation accuracy.
+                Won the award for <strong>‘Best Rescue Robot’</strong> at a provincial competition.
             </p>
 
             <h2>Key Highlights</h2>
             <ul>
-                <li>7–8 mΩ contact resistance using non-welded design</li>
-                <li>CAD optimized for compact 25×20×8 inch housing</li>
-                <li>
-                    Validated cooling airflow via <strong>Ansys & Altair CFD</strong> (+15%
-                    improvement)
-                </li>
-                <li>Automated OCV + impedance testing in Python</li>
-                <li>Custom PCBs in Altium & 3D printed fixtures</li>
+                <li>Developed an <strong>autonomous robot</strong> using <strong>Arduino Uno</strong> and <strong>C++</strong>.</li>
+                <li>Implemented <strong>ultrasonic distance sensors</strong> for obstacle detection and object retrieval.</li>
+                <li>Designed an <strong>optimized control algorithm</strong> for smooth navigation through complex paths.</li>
+                <li>Integrated <strong>DC motors and servo actuators</strong> for precise motion control.</li>
+                <li>Won <strong>Best Rescue Robot</strong> in a provincial robotics competition for performance and design innovation.</li>
             </ul>
 
+
             <h2>Tools Used</h2>
-            <p>SolidWorks | Altium Designer | Python | CFD | Composite Fabrication</p>
+            <p>Arduino | C++ | Ultrasonic Sensor | Servo Motor</p>
         </div>
     </main>
 
-    <!-- ✅ Initialize Waves Background -->
+    <!-- Initialize Waves Background -->
     <script>
         window.addEventListener("load", function () {
             if (window.VANTA) {
@@ -161,9 +160,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
