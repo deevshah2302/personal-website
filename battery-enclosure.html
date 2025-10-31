@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery Enclosure Layups | Deev Shah</title>
+
+    <!-- VANTA dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow-x: hidden;
+            background: transparent !important;
+            font-family: "Inter", sans-serif;
+        }
+
+        /* Fullscreen animated background */
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            background: transparent;
+        }
+
+        /* back button */
+        .floating-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #111;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: 0.25s ease;
+            z-index: 10;
+        }
+
+            .floating-btn:hover {
+                transform: scale(1.07);
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+            }
+
+        /* Main content */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 120px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            max-width: 800px;
+            padding: 2.5rem;
+            line-height: 1.7;
+            position: relative;
+        }
+
+            .project-card img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+
+        h2 {
+            margin-top: 1.5rem;
+            border-left: 4px solid #4361ee;
+            padding-left: 10px;
+            color: #111;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Vanta background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Back button -->
+    <a href="projects.html" class="floating-btn">← Back</a>
+
+    <!-- Content -->
+    <main class="project-container">
+        <div class="project-card">
+            <img src="layup.jpg" alt="Battery Enclosure layup" />
+
+            <h1>Battery Enclosure Vacuum Infusion Layups</h1>
+            <p><strong>UBC Thunderbikes</strong> - Oct 2023 to Nov 2023</p>
+
+            <p>
+                Designed the <strong>battery enclosure</strong> to enhance
+                <strong>structural safety</strong>, <strong>strength</strong>, and
+                <strong>manufacturability</strong> of a 150V li-ion battery pack. Utilized skills in Vacuum Infusion and Wet Layups.
+            </p>
+
+            <h2>Key Highlights</h2>
+            <ul>
+                <li>
+                    Conducted <strong>3-Point Bend</strong> and <strong>Tensile tests</strong> on Carbon Fibre-Glass Fibre Composite panels to validate structural strength of enclosure in Ansys
+                </li>
+
+                <li>
+                    Conducted Hi-pot test on the enclosure to ensure the leakage current was minimal (in microamps)
+                </li>
+
+                <li>
+                    Waterjet the final enclosure panels and used epoxy adhesive to create a strong, heat resistance and watertight bond
+                </li>
+
+                <li> Created custom jig for panel alignment during adhesive cure</li>
+            </ul>
+
+            <h2>Tools Used</h2>
+            <p> Instron Testing | Wet Layups | Vacuum Infusion | Adhesives | CAD | Hi-pot Testing</p>
+        </div>
+    </main>
+
+    <!-- Initialize Waves Background -->
+    <script>
+        window.addEventListener("load", function () {
+            if (window.VANTA) {
+                VANTA.WAVES({
+                    el: "#vanta-bg",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0x30475e,
+                    backgroundColor: 0x0d1117,
+                    shininess: 35,
+                    waveHeight: 20.0,
+                    waveSpeed: 0.5,
+                    zoom: 0.85,
+                });
+            } else {
+                console.error("VANTA failed to load");
+            }
+        });
+    </script>
+</body>
+</html>
